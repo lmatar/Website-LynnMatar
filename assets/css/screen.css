@@ -1,0 +1,76 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain) */ /* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,
+video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+html {
+  color: #eee;
+  background: #111;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 1em;
+}
+
+p {
+  padding-bottom: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+}
+ol,ul {
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+li {
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+
+a {
+  color: #02ac5d;
+}
+
+#header {
+  color: #c9f7e7;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.7058823529em 1.4117647059em 3.5294117647em 1.4117647059em;
+  /*
+    12 / 17 = 0.7058823529
+    24 / 17 = 1.4117647059
+    60 / 17 = 3.5294117647
+  */
+}
+
+/** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
+.g body {
+  position: relative;
+}
+
+.g body::after {
+  background: url('data:image/svg+xml;utf8,<svg height="18" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  content: "";
+  display: block;
+  pointer-events:
+  none; top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  position:
+  absolute;
+}
+
+.g body:active::after {
+  display: none;
+}
+
+
+
