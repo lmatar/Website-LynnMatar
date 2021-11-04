@@ -19,6 +19,7 @@ h1,
 h2,
 h3 {
   padding-bottom: 1em;
+  font-weight: bold;
 }
 
 p {
@@ -35,20 +36,73 @@ a {
   color: #02ac5d;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 #header {
   color: #c9f7e7;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
 
-  padding: 0.7058823529em 1.4117647059em 3.5294117647em 1.4117647059em;
-  /*
-    12 / 17 = 0.7058823529
-    24 / 17 = 1.4117647059
-    60 / 17 = 3.5294117647
-  */
+  padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1.33333333333em; /* 24 / 18 = 1.4117647059 */
+  padding-bottom: 3.33333333333em ; /* 60 / 18 = 3.5294117647 */
+  padding-left: 1.33333333333em; 
+ 
 }
 
+#schedule {
+  display: block;
+  padding-top: 2em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1em; /* 24 / 18 = 1.4117647059 */
+  padding-left: 1em; /* 24 / 18 = 1.4117647059 */
+  padding-bottom: 1em ; /* 60 / 18 = 3.5294117647 */
+}
+
+#schedule h2{
+  padding-bottom: 1.33333333333em;
+}
+
+#schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#schedule li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+  #schedule ul {
+    grid-column: 2/8;
+  }
+
+  #schedule ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #schedule li {
+    width: 19%; /*Had to play around to get this # */
+  }
+}
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body {
   position: relative;

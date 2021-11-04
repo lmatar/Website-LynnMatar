@@ -3,6 +3,7 @@
   <head>
     <title>Home: Lynn Matar</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="/assets/css/screen.css" />
   </head>
 
@@ -10,8 +11,7 @@
     <header id="header">
       <h1>Lynn Matar</h1>
       <nav id="navigation">
-        <h2>Menu</h2>
-        <ul>
+        <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/resume/">Resume</a></li>
           <li><a href="/history">History</a></li>
@@ -32,23 +32,54 @@
         </p>
       </article>
 
-      <article class="schedule">
-        <h2>This Semester Classes</h2>
+      <article id="schedule" class="grid">
+        <h2>Class Schedule Fall 2021</h2>
+
         <ul>
           <li>
-            Introduction to Web Development
+            <div class="card">
+              <img src="/assets/img/web-dev.jpg " alt="" >
+              <div class="card-content">
+                <h3 class="card-title">Introduction to Web Development</h3>
+                <p>Learning HTML, CSS, and JS in order to create mobile-first responsive websites.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Mobile Development
+            <div class="card">
+              <img src="/assets/img/mobile-dev.jpg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Mobile Development</h3>
+                <p>Using Java in Andriod Studio in order to make applications such as a weather app.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Interprofessional Design and Tech Entrepreneurship
+            <div class="card">
+              <img src="/assets/img/ipro.jpg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Interprofessional Design and Tech Entrepreneurship</h3>
+                <p>Working in a team of multiple majors in order to design and prototype solutions for moral distress in nurses.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Linear Algebra
+            <div class="card">
+              <img src="/assets/img/linear-alg.jpg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Linear Algebra</h3>
+                <p>Understanding systems of linear equations, matrix algebra, vector spaces, etc.</p>
+              </div>
+            </div>
           </li>
           <li>
-            History of Victorian England
+            <div class="card">
+              <img src="/assets/img/victorian-england.jpg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">History of Victorian England</h3>
+                <p>Investigating the social, cultural, and political changes between 1800-1900's in England.</p>
+              </div>
+            </div>
           </li>
         </ul>
       </article>
