@@ -1,75 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="g">
   <head>
     <title>Home: Lynn Matar</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/screen.css" />
   </head>
 
   <body>
-    <header class="h-card">
+    <header id="header">
       <h1>Lynn Matar</h1>
-      <nav id="navigation">
-        <h2>Menu</h2>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/resume/">Resume</a></li>
-          <li><a href="/history">History</a></li>
-        </ul>
-      </nav>
+      <a href="#footer" class="to-nav">Menu</a>
     </header>
-    <main id="contect">
-      <article class="aboutme">
-        <h2>About</h2>
+    <main id="content">
+      <article id="aboutme">
+        <h1>About</h1>
         <p>
-          Hey there! My name is Lynn! I'm from Lebanon and I'm a third year computer science major at Illinois Institute of
-          Technology in Chicago.
+          I am from Lebanon and I'm a third year computer science major at Illinois Institute of
+          Technology in Chicago. Currently, I am interested in back-end and front-end programming.
+          I have an upcoming internship at Accenture where I will get hands-on experience with
+          tech consulting!
         </p>
         <p>
           Although school takes up a lot of my time, I have many interests and hobbies such as
-          longboarding, weight training, playing the guitar, coffee, making puns, trying new foods,
-          and bullet journaling!
+          longboarding, weight training, playing the guitar, coffee, exploring new places, trying new foods,
+          and meeting new people!
         </p>
       </article>
 
-      <article class="schedule">
-        <h2>This Semester Classes</h2>
+      <article id="schedule" class="grid">
+        <h1>Class Schedule Fall 2021</h1>
+
         <ul>
           <li>
-            Introduction to Web Development
+            <div class="card">
+              <figure>
+                <img src="/assets/img/web-dev.jpg " alt="Web Developement course picture" >
+              </figure>
+              <div class="card-content">
+                <h3 class="card-title">Introduction to Web Development</h3>
+                <p>Learning HTML, CSS, and JS in order to create mobile-first responsive websites.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Mobile Development
+            <div class="card">
+              <figure>
+                <img src="/assets/img/mobile-dev.jpg" alt="Mobile Developement course picture">
+              </figure>
+              <div class="card-content">
+                <h3 class="card-title">Mobile Development</h3>
+                <p>Using Java in Andriod Studio in order to make applications such as a weather app.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Interprofessional Design and Tech Entrepreneurship
+            <div class="card">
+              <figure>
+                <img src="/assets/img/ipro.jpg" alt="Ipro course picture">
+              </figure>
+              <div class="card-content">
+                <h3 class="card-title">Interprofessional Design and Tech Entrepreneurship</h3>
+                <p>Working in a team of multiple majors in order to design and prototype solutions for moral distress in nurses.</p>
+              </div>
+            </div>
           </li>
           <li>
-            Linear Algebra
+            <div class="card">
+              <figure>
+                <img src="/assets/img/linear-alg.jpg" alt="Linear Algebra course picture">
+              </figure>
+              <div class="card-content">
+                <h3 class="card-title">Linear Algebra</h3>
+                <p>Understanding systems of linear equations, matrix algebra, vector spaces, etc.</p>
+              </div>
+            </div>
           </li>
           <li>
-            History of Victorian England
+            <div class="card">
+              <figure>
+                <img src="/assets/img/victorian-england.jpg" alt="Victorian England course picture">
+              </figure>
+              <div class="card-content">
+                <h3 class="card-title">History of Victorian England</h3>
+                <p>Investigating the social, cultural, and political changes between 1800-1900's in England.</p>
+              </div>
+            </div>
           </li>
         </ul>
-      </article>
-
-      <article class="contact">
-        <h2>Contact</h2>
-        <!--Maybe add a pic of myself?-->
-        <h4>
-          <a class="email" href="mailto:lmatar@hawk.iit.edu">lmatar@hawk.iit.edu</a>
-        </h4>
-        <h4>
-          <a class="linkedin" href="linkedin.com/in/lynnmatar">LinkedIn Profile</a>
-        </h4>
-        <h4>
-          <a class="github" href="github.com/lynnmatar">Github Page</a>
-        </h4>
       </article>
     </main>
 
     <footer id="footer">
-      Site was created &copy; by Lynn Matar.
-      <a href="https://github.com/lmatar/Website-LynnMatar">Source code available on GitHub</a>.
+      <section class="ft-main">
+        <div class="ft-item">
+          <h2 class="ft-title">Menu</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resume/">Resume</a></li>
+            <li><a href="/history/">History Project</a></li>
+          </ul>
+        </div>
+        <div class="ft-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a class="email" href="mailto:lmatar@hawk.iit.edu">Email</a></li>
+            <li><a class="linkedin" href="linkedin.com/in/lynnmatar">LinkedIn</a></li>
+            <li><a class="github" href="github.com/lynnmatar">Github</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="credits">
+        <ul class="credits-list">
+          <li>Site was created &copy; by Lynn Matar.</li>
+          <li><a href="https://github.com/lmatar/Website-LynnMatar">Source code available on GitHub</a></li>
+        </ul>
+      </section>
     </footer>
   </body>
 

@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain) */ /* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,
+video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+html {
+  color: #eee;
+  background: #111;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  padding-bottom: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-right: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+}
+ol,ul {
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+li {
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#header {
+  color: #c9f7e7;
+  background-color: rgb(150, 150, 150);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1.33333333333em; /* 24 / 18 = 1.4117647059 */
+  padding-left: 1.33333333333em; 
+}
+
+a.to-nav {
+	float: right;
+	background: #6b6969;
+  color: #c9f7e7;
+	text-decoration: none;
+	padding: 0 10px;
+	font-weight: bold;
+	line-height: 1.25em;
+	height: 1.25em;
+	text-transform: uppercase;
+}
+
+a.to-nav:hover,
+a.to-nav:focus {
+	color: #ffffff;
+	background: rgb(48, 47, 47);
+}
+
+#aboutme {
+  background-color: #c9f7e7;
+  color: #6b6969;
+  padding-bottom: 2em;
+}
+
+#aboutme h1 {
+  padding-top: 2em;
+}
+
+#aboutme p {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#aboutme .content-wrap,
+#aboutme-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+
+#schedule {
+  display: block;
+  padding-top: 2em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1em; /* 24 / 18 = 1.4117647059 */
+  padding-left: 1em; /* 24 / 18 = 1.4117647059 */
+  padding-bottom: 1em ; /* 60 / 18 = 3.5294117647 */
+}
+
+#schedule h2{
+  padding-bottom: 1.33333333333em;
+}
+
+#schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#schedule li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+
+@media screen and (min-width: 100px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+  #schedule ul {
+    grid-column: 2/8;
+  }
+
+  #schedule ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #schedule li {
+    width: 19%; /*Had to play around to get this # */
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+#footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.3333333em;
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(181, 200, 240);
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #fff;
+  font-size: 1.25em;
+  padding-bottom: 0.625em;
+}
+
+/* Footer main */
+.ft-main {
+  padding: 1.25em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-item {
+  min-width: 12.5em;
+}
+
+.credits {
+  padding: 0.9375em 1.875em;
+  background-color: #333;
+}
+.credits-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.credits-list li {
+  padding-right: 0.625em;
+}
+
+
+
+/** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
+.g body {
+  position: relative;
+}
+
+.g body::after {
+  background: url('data:image/svg+xml;utf8,<svg height="18" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  content: "";
+  display: block;
+  pointer-events:
+  none; top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  position:
+  absolute;
+}
+
+.g body:active::after {
+  display: none;
+}
+
+
+
