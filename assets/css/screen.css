@@ -20,20 +20,19 @@ h2,
 h3 {
   padding-bottom: 1em;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 p {
   padding-bottom: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-right: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
 }
 ol,ul {
   padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
 }
 li {
   padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
-}
-
-a {
-  color: #02ac5d;
 }
 
 img {
@@ -44,16 +43,54 @@ img {
 
 #header {
   color: #c9f7e7;
+  background-color: rgb(150, 150, 150);
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-
   padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
   padding-right: 1.33333333333em; /* 24 / 18 = 1.4117647059 */
-  padding-bottom: 3.33333333333em ; /* 60 / 18 = 3.5294117647 */
   padding-left: 1.33333333333em; 
- 
 }
+
+a.to-nav {
+	float: right;
+	background: #6b6969;
+  color: #c9f7e7;
+	text-decoration: none;
+	padding: 0 10px;
+	font-weight: bold;
+	line-height: 1.25em;
+	height: 1.25em;
+	text-transform: uppercase;
+}
+
+a.to-nav:hover,
+a.to-nav:focus {
+	color: #ffffff;
+	background: rgb(48, 47, 47);
+}
+
+#aboutme {
+  background-color: #c9f7e7;
+  color: #6b6969;
+  padding-bottom: 2em;
+}
+
+#aboutme h1 {
+  padding-top: 2em;
+}
+
+#aboutme p {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#aboutme .content-wrap,
+#aboutme-a .content-wrap {
+  padding: 0 1.5em;
+}
+
 
 #schedule {
   display: block;
@@ -83,6 +120,13 @@ img {
   padding: 1.5em;
 }
 
+
+@media screen and (min-width: 100px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
@@ -103,6 +147,65 @@ img {
     width: 19%; /*Had to play around to get this # */
   }
 }
+
+@media screen and (min-width: 1240px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+#footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.3333333em;
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(181, 200, 240);
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #fff;
+  font-size: 1.25em;
+  padding-bottom: 0.625em;
+}
+
+/* Footer main */
+.ft-main {
+  padding: 1.25em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-item {
+  min-width: 12.5em;
+}
+
+.credits {
+  padding: 0.9375em 1.875em;
+  background-color: #333;
+}
+.credits-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.credits-list li {
+  padding-right: 0.625em;
+}
+
+
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body {
   position: relative;
