@@ -91,8 +91,11 @@ a.to-nav:focus {
   padding: 0 1.5em;
 }
 
+.card-content {
+  padding: 1.5em;
+}
 
-#schedule {
+#schedule, #history {
   display: block;
   padding-top: 2em ; /* 12 / 18 = 0.7058823529*/
   padding-right: 1em; /* 24 / 18 = 1.4117647059 */
@@ -100,11 +103,11 @@ a.to-nav:focus {
   padding-bottom: 1em ; /* 60 / 18 = 3.5294117647 */
 }
 
-#schedule h2{
+#schedule, #history h2{
   padding-bottom: 1.33333333333em;
 }
 
-#schedule ul {
+#schedule, #history ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -116,10 +119,47 @@ a.to-nav:focus {
   color: #333;
 }
 
-.card-content {
-  padding: 1.5em;
+#about li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
 }
 
+#adapictures li{
+  margin-bottom: 1em;
+  background: rgb(236, 162, 127);
+  color: #333;
+}
+
+#computing {
+  margin-bottom: 1em;
+  background: rgb(171, 231, 250);
+  color: #333;
+}
+
+#funfacts {
+  margin-bottom: 1em;
+  background: rgb(224, 180, 241);
+  color: #333;
+}
+
+#faq {
+  margin-bottom: 1em;
+  background: rgb(247, 174, 178);
+  color: #333;
+}
+
+#byron {
+  margin-bottom: 1em;
+  background: rgb(174, 247, 216);
+  color: #333;
+}
+
+#game {
+  margin-bottom: 1em;
+  background: rgb(248, 235, 177);
+  color: #333;
+}
 
 @media screen and (min-width: 100px) {
   .ft-main {
@@ -146,6 +186,20 @@ a.to-nav:focus {
   #schedule li {
     width: 19%; /*Had to play around to get this # */
   }
+
+  #history ul {
+    grid-column: 2/8;
+  }
+
+  #history ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #history li {
+    width: 19%; /*Had to play around to get this # */
+  }
+
 }
 
 @media screen and (min-width: 1240px) {
