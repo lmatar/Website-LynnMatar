@@ -6,10 +6,11 @@ video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,a
 
 /* Begin site styles below */
 
+/* Base Styles */
 html {
   color: #eee;
   background: #111;
-  font-family: Arial, Helvetica, sans-serif;;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-align: left;
@@ -19,7 +20,7 @@ h1,
 h2,
 h3 {
   padding-bottom: 0.77777777777em; /* 14 / 18 = 0.77777777777 */
-  padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */;
+  padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -30,7 +31,7 @@ p {
   padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
 }
 
-ul,ol,li {
+ul, ol, li {
   padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
 }
 
@@ -52,108 +53,24 @@ img {
   padding-bottom: 1em;
 }
 
-#header {
-  color: #c9f7e7;
-  background-color: rgb(150, 150, 150);
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
-  padding-right: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
-  padding-left: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
-}
+/* Module Styles */
 
 a.to-nav {
-	float: right;
-	background: #6b6969;
+  float: right;
+  background: #6b6969;
   color: #c9f7e7;
-	text-decoration: none;
-	padding: 0 10px;
-	font-weight: bold;
-	line-height: 1.25em;
-	height: 1.25em;
-	text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0.55555556em; /* 10 / 18 = 0.55555556 */
+  font-weight: bold;
+  line-height: 1.25em;
+  height: 1.25em;
+  text-transform: uppercase;
 }
 
 a.to-nav:hover,
 a.to-nav:focus {
-	color: #ffffff;
-	background: rgb(48, 47, 47);
-}
-
-#aboutme {
-  background-color: #c9f7e7;
-  color: #6b6969;
-  padding-bottom: 2em; /* 36 / 18 = 1.4117647059 */
-  padding-left: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
-}
-
-#aboutme h1 {
-  padding-top: 2em; /* 36 / 18 = 1.4117647059 */
-}
-
-#aboutme p {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-#schedule {
-  display: block;
-  padding-top: .7058823529em ; /* 12 / 18 = 0.7058823529*/
-  padding-right: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
-  padding-left: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
-  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
-}
-
-#schedule h2{
-  padding-bottom: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
-}
-
-#schedule ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#schedule li {
-  margin-bottom: 1em;
-  background: #fff;
-  color: #333;
-}
-
-#resume {
-  background-color: #c9f7e7;
-  color: rgb(150, 150, 150);
-}
-
-#resume li {
-  margin-left: 1em;
-}
-
-#skills ul, #courses ul, #leadership ul, #awards ul {
-  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
-}
-
-#contact {
-  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
-  padding-top: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
-}
-
-#resume h2 {
-  font-size: 1.1em; /* 16/ 16 = 1 */
-  color: black;
-  text-emphasis-style: open;
-  text-emphasis-position: under left;
-}
-
-#resume h3 {
-  padding-bottom: 0;
-}
-
-#iit {
-  padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
-  font-style: italic;
+  color: #ffffff;
+  background: rgb(48, 47, 47);
 }
 
 .workdescription, .workdate {
@@ -161,7 +78,7 @@ a.to-nav:focus {
   font-style: italic;
 }
 
-.workdetail li,  #courses li, #skills li, #leadership li,  #awards li{
+.workdetail li {
   list-style: circle;
   list-style-position: inside;
   padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
@@ -171,7 +88,7 @@ a.to-nav:focus {
   margin: 0 auto;
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16.6666667em, 1fr)); /* 300 / 18 = 16.6666667 */
   grid-row: auto / span 2;
 }
 
@@ -190,104 +107,6 @@ a.to-nav:focus {
 .historycards ul {
   list-style-type: square;
   padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
-}
-
-#citations {
-  padding-left: 1.5em;
-  background-color: white;
-  color:rgb(150, 150, 150);
-}
-
-#citations h2 {
-  padding-top: 1.5em;
-}
-
-#about, #babbagework {
-  background-color: #c5ae93;
-}
-
-#womenincs, #adababbage {
-  background-color: #9ec3d4;
-}
-
-#mathwork, #demorgan {
-  background-color: #c593a0;
-}
-
-#adanote, #byron {
-  background-color: #9bc593;
-}
-
-#adavision, #byronimpact {
-  background-color: #bfc48b;
-}
-
-#patriarchy, #funfacts {
-  background-color: #9b93c5;
-}
-
-#popculture, #faq1 {
-  background-color: #93c5ba;
-}
-
-#steampunk, #faq2 {
-  background-color: #6d6c43;
-}
-
-#acmbook, #game {
-  background-color: #5f5f72;
-}
-
-#babbage, #moreinfo {
-  background-color: #c59393;
-}
-
-@media screen and (min-width: 1000px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
-  }
-
-  .content-wrap,
-  #schedule ul {
-    grid-column: 2/8;
-  }
-
-  #schedule ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #schedule li {
-    width: 19%; /*Had to play around to get this # */
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .ft-main {
-    justify-content: space-evenly;
-  }
-}
-
-#footer {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: #555;
-  color: #bbb;
-  line-height: 1.3333333em;
-}
-#footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#footer a {
-  text-decoration: none;
-  color: rgb(181, 200, 240);
-}
-#footer a:hover {
-  text-decoration: underline;
 }
 
 .ft-title {
@@ -321,23 +140,214 @@ a.to-nav:focus {
   padding-right: 0.625em;
 }
 
+#header {
+  color: #c9f7e7;
+  background-color: rgb(150, 150, 150);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
+  padding-left: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
+}
+
+#aboutme {
+  background-color: #c9f7e7;
+  color: #6b6969;
+  padding-bottom: 2em; /* 36 / 18 = 1.4117647059 */
+  padding-left: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
+}
+
+#aboutme h1 {
+  padding-top: 2em; /* 36 / 18 = 1.4117647059 */
+}
+
+#aboutme p {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#schedule {
+  display: block;
+  padding-top: 0.7058823529em ; /* 12 / 18 = 0.7058823529*/
+  padding-right: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
+  padding-left: 1.4117647059em; /* 24 / 18 = 1.4117647059 */
+  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+}
+
+#schedule h2 {
+  padding-bottom: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
+}
+
+#schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#schedule li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+#resume {
+  background-color: #c9f7e7;
+  color: rgb(150, 150, 150);
+}
+
+#resume li {
+  margin-left: 1em;
+}
+
+#resume h2 {
+  font-size: 1.1em; /* 16/ 16 = 1 */
+  color: black;
+  text-emphasis-style: open;
+  text-emphasis-position: under left;
+}
+
+#resume h3 {
+  padding-bottom: 0;
+}
+
+#contact {
+  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+  padding-top: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+}
+
+#iit {
+  padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
+  font-style: italic;
+}
+
+#skills ul, #courses ul, #leadership ul, #awards ul {
+  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+}
+
+#courses li, #skills li, #leadership li, #awards li {
+  list-style: circle;
+  list-style-position: inside;
+  padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
+}
+
+#citations {
+  padding-left: 1.5em;
+  background-color: white;
+  color: rgb(150, 150, 150);
+}
+
+#citations h2 {
+  padding-top: 1.5em;
+}
+
+#about, #babbagework {
+  background-color: #c5ae93;
+}
+
+#womenincs, #adababbage {
+  background-color: #9ec3d4;
+}
+
+#mathwork, #demorgan {
+  background-color: #c593a0;
+}
+
+#adanote, #byron {
+  background-color: #9bc593;
+}
+
+#adavision, #byronimpact {
+  background-color: #bfc48b;
+}
+
+#patriarchy, #funfacts {
+  background-color: #9b93c5;
+}
+
+#popculture, #holiday {
+  background-color: #93c5ba;
+}
+
+#steampunk, #lgbtq {
+  background-color: #6d6c43;
+}
+
+#acmbook, #game {
+  background-color: #5f5f72;
+}
+
+#babbage, #moreinfo {
+  background-color: #c59393;
+}
+
+#footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.3333333em;
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(181, 200, 240);
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/* State Styles */
+
+@media screen and (min-width: 55.5555556em) { /* 1000 / 18 = 55.5555556 */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+  #schedule ul {
+    grid-column: 2/8;
+  }
+
+  #schedule ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #schedule li {
+    width: 19%; /*Had to play around to get this # */
+  }
+}
+
+@media screen and (min-width: 33.3333333em) { /* 600 / 18 = 33.3333333 */
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body {
   position: relative;
 }
 
 .g body::after {
-  background: url('data:image/svg+xml;utf8,<svg height="18" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  background: url('data:image/svg+xml;utf8,<svg height="28" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
   content: "";
   display: block;
-  pointer-events:
-  none; top: 0;
+  pointer-events: none;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 9999;
-  position:
-  absolute;
+  position: absolute;
 }
 
 .g body:active::after {
