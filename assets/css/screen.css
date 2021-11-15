@@ -131,11 +131,24 @@ a.to-nav:focus {
   margin-left: 1em;
 }
 
+#skills ul, #courses ul, #leadership ul, #awards ul {
+  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+}
+
+#contact {
+  padding-bottom: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+  padding-top: 1.4117647059em ; /* 24 / 18 = 1.4117647059 */
+}
+
 #resume h2 {
   font-size: 1.1em; /* 16/ 16 = 1 */
   color: black;
   text-emphasis-style: open;
   text-emphasis-position: under left;
+}
+
+#resume h3 {
+  padding-bottom: 0;
 }
 
 #iit {
@@ -250,7 +263,7 @@ a.to-nav:focus {
   }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 600px) {
   .ft-main {
     justify-content: space-evenly;
   }
