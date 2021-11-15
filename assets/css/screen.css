@@ -142,6 +142,7 @@ a.to-nav:focus {
   padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
   font-style: italic;
 }
+
 .workdescription, .workdate {
   font-size: 1em; /* 16/ 16 = 1 */
   font-style: italic;
@@ -151,10 +152,6 @@ a.to-nav:focus {
   list-style: circle;
   list-style-position: inside;
   padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
-}
-
-.card-content {
-  padding: 1.5em;
 }
 
 .historycards {
@@ -306,11 +303,10 @@ a.to-nav:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
 .credits-list li {
   padding-right: 0.625em;
 }
-
-
 
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body {
