@@ -1,6 +1,6 @@
 {
 
-  //Stolley House Config, v. 3.0.0, 20211102
+  # Stolley House Config, v. 3.0.0, 20211102
 
   "rules": {
     "at-rule-name-case": "lower",

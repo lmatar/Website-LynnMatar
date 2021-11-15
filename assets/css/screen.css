@@ -18,27 +18,31 @@ html {
 h1,
 h2,
 h3 {
-  padding-bottom: 0.77777777777em; /* 14 / 18 = 0.6666666667 */
+  padding-bottom: 0.77777777777em; /* 14 / 18 = 0.77777777777 */
+  padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-p,ul,ol {
-  padding-bottom: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+p {
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
   padding-right: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
   padding-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
 }
-ul {
-  list-style-type: square;
+
+ul,ol,li {
   padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
 }
-li {
-  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
-}
+
 ol {
-  list-style-type: lower-roman;
-  margin-left: 1em;
-  padding: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+  margin-left: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+}
+
+a {
+  color: inherit;
+  text-decoration: underline; /* This works for all browsers */
+  text-decoration-color: #AAA; /* Additional intrinsic styles */
+  text-decoration-style: solid;
 }
 
 img {
@@ -55,8 +59,8 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 0.66666666666em ; /* 12 / 18 = 0.7058823529*/
-  padding-right: 1.33333333333em; /* 24 / 18 = 1.4117647059 */
-  padding-left: 1.33333333333em; 
+  padding-right: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
+  padding-left: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
 }
 
 a.to-nav {
@@ -90,7 +94,7 @@ a.to-nav:focus {
 #aboutme p {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 #aboutme .content-wrap,
@@ -108,7 +112,7 @@ a.to-nav:focus {
 }
 
 #schedule h2{
-  padding-bottom: 1.33333333333em;
+  padding-bottom: 1.33333333333em; /* 24 / 18 = 1.33333333333 */
 }
 
 #schedule ul {
@@ -121,6 +125,37 @@ a.to-nav:focus {
   margin-bottom: 1em;
   background: #fff;
   color: #333;
+}
+
+#resume {
+  background-color: #c9f7e7;
+  color: rgb(150, 150, 150);
+}
+
+#resume li {
+  margin-left: 1em;
+}
+
+#resume h2 {
+  font-size: 1.1em; /* 16/ 16 = 1 */
+  color: black;
+  text-emphasis-style: open;
+  text-emphasis-position: under left;
+}
+
+#iit {
+  padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
+  font-style: italic;
+}
+.workdescription, .workdate {
+  font-size: 1em; /* 16/ 16 = 1 */
+  font-style: italic;
+}
+
+.workdetail li,  #courses li, #skills li, #leadership li,  #awards li{
+  list-style: circle;
+  list-style-position: inside;
+  padding-left: 0.3333333em; /* 6 / 18 = 0.3333333333 */
 }
 
 .card-content {
@@ -141,10 +176,21 @@ a.to-nav:focus {
   padding: 1em;
 }
 
+.historycards ol {
+  list-style-type: lower-roman;
+  margin-left: 1em;
+  padding: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+
+.historycards ul {
+  list-style-type: square;
+  padding-bottom: 0.3333333333em; /* 6 / 18 = 0.3333333333 */
+}
+
 #citations {
   padding-left: 1.5em;
   background-color: white;
-  color:rgb(150, 150, 150)
+  color:rgb(150, 150, 150);
 }
 
 #citations h2 {
@@ -189,13 +235,6 @@ a.to-nav:focus {
 
 #babbage, #moreinfo {
   background-color: #c59393;
-}
-
-
-@media screen and (min-width: 100px) {
-  .ft-main {
-    justify-content: space-evenly;
-  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -250,6 +289,7 @@ a.to-nav:focus {
   color: #fff;
   font-size: 1.25em;
   padding-bottom: 0.625em;
+  padding-left: 0;
 }
 
 /* Footer main */
@@ -299,6 +339,3 @@ a.to-nav:focus {
 .g body:active::after {
   display: none;
 }
-
-
-
