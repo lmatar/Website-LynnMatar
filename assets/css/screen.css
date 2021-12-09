@@ -10,7 +10,7 @@ video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,a
 html {
   color: #eee;
   background: #111;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-align: left;
