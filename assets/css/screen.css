@@ -168,7 +168,7 @@ a.to-nav:focus {
 #aboutme p {
   display: flex;
   justify-content: space-between;
-
+  text-indent: 2em; /*adding indentation to the paragraphs*/
 }
 
 #schedule {
