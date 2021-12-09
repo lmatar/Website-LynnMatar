@@ -139,6 +139,8 @@ a.to-nav:focus {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  font-size: 0.75em; /* 12 / 16 = 0,75 */
+  line-height: 1.5em; /* 24 / 16 = 1.5 */
 }
 
 .credits-list li {
